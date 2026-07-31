@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | JengaFM</title>
+<meta name="description" content="Request a quote from JengaFM — nationwide facilities management for offices, retail, industrial, healthcare, education, hospitality, residential and public-sector buildings.">
+<link rel="icon" href="assets/Jenga_Favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/Jenga_Favicon.png" alt="JengaFM logo">
+      <span>JengaFM<span class="tag">Facilities Management</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <span class="header-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.96.68 2.89a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.19-1.25a2 2 0 0 1 2.11-.45c.93.32 1.9.55 2.89.68A2 2 0 0 1 22 16.92Z"/></svg>
+        0800 123 4567
+      </span>
+      <a class="btn btn-primary btn-sm" href="contact.html">Request a Quote</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container" style="grid-template-columns:1fr;">
+    <div>
+      <div class="eyebrow">Get In Touch</div>
+      <h1>Request a quote</h1>
+      <p class="lead" style="max-width:640px;">Tell us about your building and the services you need. Whether it's a single reactive repair or a nationwide TFM contract, we'll come back with a tailored proposal.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-2" style="align-items:flex-start;">
+    <div class="card">
+      <h3 class="mt-0">Tell us about your project</h3>
+      <form id="quote-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+          <div class="field full">
+            <label for="service">Service category</label>
+            <select id="service" name="service"></select>
+          </div>
+          <div class="field full">
+            <label for="sector">Sector</label>
+            <select id="sector" name="sector"></select>
+          </div>
+          <div class="field full">
+            <label for="message">Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Site location, scope of work, timescales..."></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" style="margin-top:20px;" type="submit">Submit Request</button>
+        <p class="form-feedback" style="display:none; margin-top:14px; color:var(--color-amber-dark); font-weight:600;"></p>
+      </form>
+    </div>
+
+    <div class="contact-info-card">
+      <h3>Speak to our team</h3>
+      <p style="color:rgba(255,255,255,0.72);">Our national helpdesk is on hand to scope your requirements and coordinate the right engineers, nationwide.</p>
+      <ul id="contact-info-list">
+        <li data-icon="phone" data-text="0800 123 4567 — 24/7 emergency line"></li>
+        <li data-icon="mail" data-text="hello@jengafm.co.uk"></li>
+        <li data-icon="pin" data-text="Nationwide coverage across the UK"></li>
+        <li data-icon="clock" data-text="Helpdesk open 24/7, 365 days a year"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/Jenga_Favicon.png" alt="JengaFM logo">
+          <span>JengaFM</span>
+        </a>
+        <p>A nationwide, full-service facilities management provider — one point of contact for offices, retail, industrial, healthcare, education, hospitality, residential, warehouse and public-sector buildings.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#building-maintenance">Building Maintenance</a></li>
+          <li><a href="services.html#mechanical-electrical">Mechanical &amp; Electrical</a></li>
+          <li><a href="services.html#compliance-statutory">Compliance &amp; Statutory</a></li>
+          <li><a href="services.html#property-support">Property Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>0800 123 4567</li>
+          <li>hello@jengafm.co.uk</li>
+          <li>Nationwide coverage, UK</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> JengaFM. All rights reserved.</span>
+      <span>Nationwide Facilities Management</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const serviceSelect = document.getElementById("service");
+  serviceSelect.innerHTML = '<option value="">Select a category…</option>' +
+    SERVICE_CATEGORIES.map(c => `<option value="${c.name}">${c.name}</option>`).join("");
+
+  const sectorSelect = document.getElementById("sector");
+  sectorSelect.innerHTML = '<option value="">Select a sector…</option>' +
+    INDUSTRIES_SERVED.map(s => `<option value="${s}">${s}</option>`).join("");
+
+  document.querySelectorAll("#contact-info-list li").forEach(li => {
+    li.innerHTML = ICONS[li.dataset.icon] + "<span>" + li.dataset.text + "</span>";
+  });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
