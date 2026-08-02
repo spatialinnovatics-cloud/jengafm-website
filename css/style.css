@@ -146,7 +146,7 @@ p { margin: 0 0 1em; color: var(--color-ink-soft); }
   border-radius: 2px;
 }
 .header-cta { display: flex; align-items: center; gap: 14px; }
-.header-phone { font-weight: 700; font-size: 0.9rem; color: var(--color-navy); display: flex; align-items: center; gap: 6px; }
+.header-email { font-weight: 700; font-size: 0.9rem; color: var(--color-navy); display: flex; align-items: center; gap: 6px; }
 
 .nav-toggle {
   display: none;
@@ -629,7 +629,7 @@ section { padding: 88px 0; }
   .main-nav.nav-open { max-height: 320px; opacity: 1; pointer-events: auto; }
   .main-nav a { width: 100%; padding: 12px 10px; }
   .nav-toggle { display: block; }
-  .header-phone { display: none; }
+  .header-email { display: none; }
   .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .field.full { grid-column: auto; }
