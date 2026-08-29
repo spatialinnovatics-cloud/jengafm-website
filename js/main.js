@@ -9,16 +9,44 @@ document.addEventListener("DOMContentLoaded", () => {
   initCounters();
   initBackToTop();
   initScrollspy();
+  initScrollProgress();
 });
 
 function initNavToggle() {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".main-nav");
   if (!toggle || !nav) return;
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("nav-open");
+
+  const backdrop = document.createElement("div");
+  backdrop.className = "nav-backdrop";
+  document.body.appendChild(backdrop);
+
+  const setOpen = (open) => {
+    nav.classList.toggle("nav-open", open);
+    toggle.classList.toggle("is-active", open);
+    backdrop.classList.toggle("visible", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
-  });
+  };
+
+  toggle.addEventListener("click", () => setOpen(!nav.classList.contains("nav-open")));
+  backdrop.addEventListener("click", () => setOpen(false));
+  nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+}
+
+function initScrollProgress() {
+  const bar = document.createElement("div");
+  bar.className = "scroll-progress";
+  document.body.appendChild(bar);
+
+  const update = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + "%";
+  };
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
 }
 
 function renderServiceCategories() {
