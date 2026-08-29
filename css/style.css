@@ -477,6 +477,8 @@ section { padding: 88px 0; }
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
   font-size: 0.82rem; color: rgba(255,255,255,0.45);
 }
+.footer-bottom a { text-decoration: underline; text-underline-offset: 2px; }
+.footer-bottom a:hover { color: #fff; }
 
 /* ==========================================================================
    Contact / form
