@@ -10,7 +10,24 @@ document.addEventListener("DOMContentLoaded", () => {
   initBackToTop();
   initScrollspy();
   initScrollProgress();
+  initMobileStickyCta();
 });
+
+function initMobileStickyCta() {
+  if (/contact\.html$/.test(window.location.pathname)) return;
+  const hero = document.querySelector(".hero");
+  if (!hero) return;
+
+  const bar = document.createElement("div");
+  bar.className = "mobile-sticky-cta";
+  bar.innerHTML = '<a class="btn btn-primary btn-block" href="contact.html">Request a Quote</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add("has-sticky-cta");
+
+  const update = () => bar.classList.toggle("visible", hero.getBoundingClientRect().bottom < 0);
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
 
 function initNavToggle() {
   const toggle = document.querySelector(".nav-toggle");
